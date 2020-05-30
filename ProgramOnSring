@@ -1,0 +1,103 @@
+1.Compare  two strings
+public class Abc{
+    public static void main (String[] args) {
+        String a="unnati";
+        String b="varshney";
+        System.out.println(a.CompareTo(b));
+    }
+}
+2.Search the last position of a String
+public class Abc{
+    public static void main (String[] args) {
+        String s="my name is unnati";
+        String subStr="unnati";
+        System.out.println(s.lastIndexOf(subStr));
+    }
+}
+3.Remove A particular character from a string
+public class Abc{
+    public static void main (String[] args) {
+        String str="my name is unnati";
+        System.out.println(charRemoveAt(str,4));
+    }
+    public static String charRemoveAt(String str, int p) {  
+              return str.substring(0, p) + str.substring(p + 1);  
+           }  
+}
+4.Replace a substring inside a String
+public class Abc{
+    public static void main (String[] args) {
+        String str="my name is unnati";
+        System.out.println(str.replace("unnati","varshney"));
+    }
+    }
+5.Reverse a String in java 
+public class Abc{
+    public static void main (String[] args) {
+        String str="my name is unnati";
+        StringBuilder input1=new StringBuilder();
+        input1.append(str);
+        input1=input1.reverse();
+        System.out.println(input1);
+    }
+}
+6.Search a word inside a String
+public class Abc{
+    public static void main (String[] args) {
+        String s="india is my country";
+        int index=s.indexOf("my");
+        System.out.println(index);
+    }
+}
+7.Splits String in array
+public class Abc{
+    public static void main (String[] args) {
+        String s="india-is-my-country";
+        String parts[]=s.split("-");
+        for(int i =0;i<=parts.length;i++)
+        System.out.println(parts[i]);
+    }
+}
+8.Upper case 
+public class Abc{
+    public static void main (String[] args) {
+        String s="india-is-my-country";
+        String s1=s.toUpperCase();
+        System.out.println(s1);
+    }
+}
+9.print even length word in a string
+public class Print { 
+    public static void printWords(String s) 
+    { 
+  
+        // Splits Str into all possible tokens 
+        for (String word : s.split(" ")) 
+  
+            // if length is even 
+            if (word.length() % 2 == 0) 
+  
+                // Print the word 
+                System.out.println(word); 
+    } 
+  
+    // Driver Code 
+    public static void main(String[] args) 
+    { 
+  
+        String s = "jini rahul nikhil kapil"; 
+        printWords(s); 
+    } 
+}
+10.Convert a Double into String
+public class A{
+    public static void main (String[] args) {
+        String str="99.89888";
+        Double val=Double.parseDouble(str);
+    System.out.println(val);
+    //Second method
+    String str2="444.546";
+    double val2=Double.valueOf(str2);
+    System.out.println(val2);
+        }
+}
