@@ -101,3 +101,23 @@ public class A{
     System.out.println(val2);
         }
 }
+11.String is anagram or not
+import java.util.Arrays;
+public class Tsst{
+    public static void main (String[] args) {
+        String s1="silent";
+        String s2="listen";
+        char a[]=s1.toCharArray();
+        char b[]=s2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        Boolean results=Arrays.equals(a,b);
+        if(results==true)
+        {
+            System.out.println("String is anagram");
+        }
+        else{
+            System.out.println("String is not anagram");
+        }
+    }
+}
