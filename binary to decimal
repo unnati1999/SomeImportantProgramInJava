@@ -1,0 +1,15 @@
+public class Decimal{
+    public static void main(String[]args)
+    {
+        int n=1011;
+        int i=0,d=0;
+        int t=n;
+        while(t>0)
+        {
+            int r=t%10;
+            t=t/10;
+            d=d+(r*(int)Math.pow(2,i++));
+        }
+        System.out.println(d);
+    }
+}
