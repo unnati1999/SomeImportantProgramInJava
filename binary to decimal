@@ -13,3 +13,18 @@ public class Decimal{
         System.out.println(d);
     }
 }
+
+
+
+//with using inbuilt function
+
+import java.util.Scanner;
+public class Binarytodecimal{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter any Number");
+          String binaryString =input.nextLine();
+          System.out.println(Integer.parseInt(binaryString,2));
+    }
+}
