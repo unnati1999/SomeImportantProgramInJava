@@ -1,3 +1,4 @@
+//WITHOUT USING INBUILT FUNCTION
 import java.util.Scanner;
 public class Binarytodecimal{
     public static void main(String[]args)
@@ -15,5 +16,15 @@ public class Binarytodecimal{
           }
             System.out.println(b);
    
+    }
+}
+//WITH USING INBUILT FUNCTION
+public class DecimalToBinary{
+    public static void main(String[]args)
+    {
+        System.out.println("Bianry of 124 ");
+        System.out.println(Integer.toBinaryString(124));
+        
+        
     }
 }
