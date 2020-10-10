@@ -1,0 +1,31 @@
+package String;
+
+public class VowelswithStar 
+{
+
+   public static void main(String[] args) 
+   {
+      String string = "HelloWorld";   
+      System.out.println("Input String : "+string);   
+      string = string.replaceAll("[AaEeIiOoUu]", "1");
+       string = string.replaceAll("[BbcCdDFfGgHHiIJjKkLlMmNnpPqQrRSsTtUuVvWwXxYyZz]", "0");
+      
+      System.out.println(string);  
+      if(string.equals(101010))
+      {
+            System.out.println("true");
+      }
+      else
+      {
+            System.out.println("false");
+      }
+      
+   }
+
+}
+
+
+OUTPUT:
+Input String : HelloWorld
+0100101000
+false
